@@ -1,0 +1,400 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+  
+  .cls-pickuplocations .cls-pickuplocations .dropdown-content {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .cls-pickuplocations.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .cls-pickuplocations .cls-pickuplocations .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .cls-pickuplocations .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .cls-pickuplocations .dropdown-content a:hover {background-color: #f1f1f1}
+  .cls-pickuplocations.dropdown:hover  .dropdown-content {
+    display: block;
+  }
+  .dropdown-selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .pickup-locations-dropdown-header {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.cnc-cls-headericons {
+    align-items: center;  
+}
+
+select.cls-pickuplocations-select {
+  padding: 0;
+  border-radius: 0px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-left: 0px;
+  cursor: pointer;
+  border: none;
+  margin-top: 0;
+  max-width: 160px;
+  margin-left: -5px;
+}
+.cnc-delivertextdiv label.cnc-dropdown-delver {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  letter-spacing: 0;
+  font-weight: 600;
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+.dropdown.cls-pickuplocations-div select > option {
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*-----27-08-2024----*/
+.disclosure button.disclosure__button span {
+  font-weight: bold;
+  letter-spacing: 0;
+}
+.pickup-locations-dropdown-header .dropdown.cls-pickuplocations-div a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 0;
+  position: relative;
+  top: 0;
+  margin-right: 0px;
+}
+.pickup-locations-dropdown-header .dropdown.cls-pickuplocations-div i {
+  font-size: 26px;
+  line-height: 36px;
+}
+.header__icons.header__icons--localization.header-localization.cnc-cls-headericons {
+  position: relative;
+}
+header .pickup-locations-dropdown-header {
+  position: static;
+  left: -26px;
+  width: 100%;
+  text-align: center;
+  top: 2px;
+  overflow: visible !important;
+}
+header .cnc-locationsspace {
+    left: -300px;
+    top: 5px;
+    min-width: 300px;
+    max-width: 300px !important;
+}
+.cnc-dropdwndiv {
+    margin-right: 25px;
+}
+.dropdown.cls-pickuplocations-div {
+  display: flex !important;
+  margin: 0;
+}
+.cnc-dropdwndiv label.cnc-dropdown-lable {
+  float: left;
+  padding-left: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  letter-spacing: 0;
+  width: 100%;
+  text-align: left;
+}
+.cnc-dropdwndiv, .cnc-delivertextdiv {
+  float: left;
+  max-width: 50%;
+  padding-left: 0px;
+}
+.desktop-localization-wrapper {
+  display: none;
+}
+.cnc-delivertextdiv span.cnc-dropdown-text {
+  float: left;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+}
+.cnc-checkload.loader {
+  display: block;
+}
+
+.cnc-checkload {
+  display: none; 
+}
+
+.loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+/*-----Tooltip-style-start----*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  min-width: 180px;
+  left: -80px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*-----Tooltip-style-end----*/
+
+@media screen and (max-width:989px) {
+ header .cnc-locationsspace {
+      left: -260px;
+      min-width: 270px;
+      max-width: 270px !important;
+  }
+  select.cls-pickuplocations-select {
+    max-width: 150px;
+  } 
+  .header__heading, .header__heading-link {
+    justify-self: start !important;
+  } 
+  h1.header__heading {
+    position: absolute;
+    left: 60px;
+  } 
+}
+
+@media screen and (max-width:767px) {
+  h1.header__heading span.h2 {
+    font-size: 16px;
+  } 
+  .dropdown.cls-pickuplocations-div {
+    display: flex !important;
+    align-items: start;
+  }
+  .header {
+    padding: 10px 1rem 10px 1rem;
+  } 
+}
+
+@media screen and (max-width:600px) {
+  select.cls-pickuplocations-select {
+    font-size: 12px;
+    max-width: 130px;
+  } 
+  .cnc-dropdwndiv, .cnc-delivertextdiv {
+    float: left;
+    max-width: 100%;
+    text-align: left;
+} 
+  h1.header__heading span.h2 {
+    font-size: 13px;
+  }
+.cnc-delivertextdiv {
+  display: none;
+}
+header .cnc-locationsspace {
+    left: -160px;
+    min-width: 180px;
+    max-width: 180px !important;
+}
+.pickup-locations-dropdown-header .dropdown.cls-pickuplocations-div a {
+    top: 0px;
+    margin-right: 6px;
+}
+.tooltip .tooltiptext {
+  bottom: -34px;
+  min-width: 150px;
+  left: -90px;
+  font-size: 13px;
+}
+}   
+
+@media screen and (max-width: 480px) {
+select.cls-pickuplocations-select {
+  padding: 7px 0px !important;
+  border-radius: 4px;
+  font-size: 12px !important;
+}
+.header {
+  padding: 10px 1rem 10px 1rem !important;
+}
+h1.header__heading {
+  left: 40px;
+}
+.cnc-dropdwndiv {
+  display: none;
+}
+img.location-icon {
+  height: 30px !important;
+}
+.dropdown a.cnc-modal-open.tooltip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .cnc-locationsspace {
+  left: -26px;
+  min-width: inherit;
+  top: 2px;
+}
+}
+
+
+.cls-pickuplocations-div .select-menu {
+  max-width: 330px;
+  margin: 20px auto 0;
+  max-height: 300px;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+.select-menu .select-btn {
+  display: flex;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.select-menu .options {
+  position: absolute;
+  width: 200px;
+  overflow-y: auto;
+  max-height: 220px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-duration: 0.35s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.35s;
+  -webkit-animation-fill-mode: both;
+  border: 1px solid #ccc;
+}
+.select-menu .options .option {
+  display: flex;
+  height: auto;
+  cursor: pointer;
+  padding: 5px 0;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+.select-menu .options li.option:hover {
+  background: transparent;
+}
+.select-menu .options li.active span {
+  color: #000;
+}
+.select-menu .options li.active span,.select-menu .options li.option:hover span {
+  color: #000;
+}
+.select-menu .options .option:hover {
+  background: #f2f2f2;
+}
+.select-menu .options .option .option-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.cls-pickuplocations-div .select-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+  transform: rotate(-180deg);
+}
+.select-menu.active .options {
+  display: none;
+  z-index: 10;
+}
+.cnc-dropdwndiv select.cls-pickuplocations-select {
+  display: none;
+}
+.select-menu .select-btn span.sBtn-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.select-menu .select-btn {
+  background-image: url(https://cdn.shopify.com/s/files/1/0885/8419/2292/files/down-arrow_1.png?v=1727334366);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.select-menu .options .option span {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width:600px) {
+  .select-menu .select-btn span.sBtn-text {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .cnc-dropdwndiv {
+    margin-right: 0;
+  } 
+  .select-menu .options .option span {
+    font-size: 14px;
+    line-height: 22px;
+  }   
+  .select-menu .options {
+    width: 190px;
+  } 
+}

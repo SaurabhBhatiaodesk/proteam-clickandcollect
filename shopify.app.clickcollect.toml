@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "6cbc0fd9456a9eccf28967912c76b0da"
+name = "click&collect"
+handle = "click-collect-14"
+application_url = "https://begins-marcus-suffered-injured.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_inventory,read_locales,read_locations,read_orders,read_product_listings,read_products,read_publications,read_script_tags,write_content,write_inventory,write_locations,write_products,write_publications,write_script_tags,write_shipping"
+
+[auth]
+redirect_urls = ["https://begins-marcus-suffered-injured.trycloudflare.com/auth/callback", "https://begins-marcus-suffered-injured.trycloudflare.com/auth/shopify/callback", "https://begins-marcus-suffered-injured.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false

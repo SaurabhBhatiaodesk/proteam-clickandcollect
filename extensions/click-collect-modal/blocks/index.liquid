@@ -1,0 +1,21 @@
+<script>window.hostname = '{{ shop.permanent_domain }}';</script>
+{% liquid unless template == "cart"
+    render 'global-popup'
+    else
+    render 'cart-popup'
+    endunless
+%}
+
+{% schema %}
+{
+  "name": "locations popup",
+  "target": "head",
+  "javascript": "globalclickcollect.js",
+  "stylesheet": "globalclickcollect.css",
+
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}

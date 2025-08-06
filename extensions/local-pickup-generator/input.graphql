@@ -1,0 +1,22 @@
+query Input {
+  cart {
+     # Cart line attribute to get the fabric length provided by the customer
+      locationShow: attribute(key: "customerLocationName") {
+        value
+      }
+    lines {
+      id
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+        }
+      }
+    }
+  }
+  locations {
+    id
+    handle
+    name
+  }
+}

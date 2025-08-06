@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "31ef8dcd9586021f76d3de78510465c8"
+name = "Retail Express-Click & Collect"
+handle = "retail-express-click-collect"
+application_url = "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com"
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "click-collolect.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_inventory,read_locales,read_locations,read_product_listings,read_products,read_publications,read_script_tags,write_content,write_inventory,write_locations,write_products,write_publications,write_script_tags,write_shipping"
+
+[auth]
+redirect_urls = [
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.comauth/callback",
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.comauth/shopify/callback",
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com/api/auth/callback",
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com/api/auth"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks"
+  compliance_topics = [ "customers/data_request", "customers/redact", "shop/redact" ]
+
+[pos]
+embedded = false
+
+[app_preferences]
+url = "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com"

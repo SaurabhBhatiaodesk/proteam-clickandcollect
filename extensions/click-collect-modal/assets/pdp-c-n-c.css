@@ -1,0 +1,79 @@
+ .inventory-details{background:#f1f1f1;border:1px solid #ccc;border-radius:8px;padding:20px}.inventory-details .broadway p,.inventory-details .in-stock .stock,.inventory-details .out-stock .stock,.inventory-details .out-stock p{font-size:14px;line-height:20px;letter-spacing:0;color:#000}.inventory-details .broadway,.inventory-details .in-stock,.inventory-details .out-stock{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:7px;}.inventory-details div#myDropdown{display:none;flex-wrap:wrap;width:100%}.inventory-details .in-stock .stock,.inventory-details .out-stock .stock{position:relative;min-width:auto}.inventory-details .in-stock .stock::before,.inventory-details .out-stock .stock::before{position:absolute;content:"";background:red;width:10px;height:10px;border-radius:50%;top:50%;left:-16px;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%)}.inventory-details .in-stock .stock::before{background:green!important}.inventory-details .broadway .dropdown .dropbtn svg{width:18px;height:auto;position:relative;top:4px}.inventory-details .broadway .dropdown:hover div#myDropdown{display:block}.inventory-details div#myDropdown a{width:100%;display:flex;flex-wrap:wrap;color:#111;text-decoration:none;font-size:16px;margin:0;padding:0}
+.popup-inner-col .add{cursor:pointer}
+ 
+ .popup-modal.showmodal{display:block!important}
+ .inventory-details p {
+    margin: 0;
+    font-weight: 600;
+    color: #3B3B3B;
+    font-family: "Poppins", sans-serif;
+}
+.inventory-details a.store-link {
+    color: #0078D4;
+    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+.inventory-details .broadway .dropdown .dropbtn {
+    border: none;
+    font-size: 20px;
+    padding: 0;
+    line-height: 24px;
+    color: #141414;
+    font-family: "Poppins", sans-serif; 
+}
+.out-stock.inventory_status {
+    margin-bottom: 10px;
+}
+ /* .loader {
+    width: 100%;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 15px;
+    /* clip-path: inset(0 3ch 0 0); */
+    /* animation: l4 1s steps(4) infinite; 
+} */
+/* .loader:before {
+    content: "Loading..."
+}  */
+
+/* .loader + .inventory_status,.loader + .inventory_status +  a.store-link {
+    visibility: hidden;
+} */
+/* .loader {
+    margin: 0px auto;
+    position: relative;
+    top: 20px;
+} */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #25b09b;
+    --_m: 
+      conic-gradient(#0000 10%,#000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    animation: l3 1s infinite linear;
+  }
+
+  
+  .inventory-details .loader .dropdown {
+    opacity: 0;
+  }
+
+
+  /*------25-9-2024----*/
+
+  .inventory-details .broadway, .inventory_status.in-stock {
+    padding: 5px 0;
+}
+
+  @keyframes l3 {to{transform: rotate(1turn)}}

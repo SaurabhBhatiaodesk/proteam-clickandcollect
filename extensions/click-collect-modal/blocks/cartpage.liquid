@@ -1,0 +1,14 @@
+<script type="module" src="{{ 'cnc2-cart.js' | asset_url }}" defer></script>
+<button type="button" class="cart-btn button" style="color: {{ section.settings.colour }};">Checkout With Click & Collect</button>
+{% schema %}
+{
+  "name": "cart checkout button",
+  "target": "section",
+  // "javascript": "cnc-cart.js",  
+  "stylesheet": "cnc-cart.css",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#fff" }
+  ]
+}       
+{% endschema %}

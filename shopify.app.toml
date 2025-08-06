@@ -1,0 +1,35 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c2aef3cf60c016454d3da1bc06566b9e"
+name = "click&collect"
+handle = "clickncollect-1"
+application_url = "https://clickncollect-12d7088d53ee.herokuapp.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "saas-click-collect.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_inventory,read_locales,read_locations,read_orders,read_product_listings,read_products,read_publications,read_script_tags,write_content,write_inventory,write_locations,write_products,write_publications,write_script_tags,write_shipping"
+
+[auth]
+redirect_urls = [
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.comauth/callback",
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.comauth/shopify/callback",
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com/api/auth/callback",
+  "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com/api/auth"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  
+
+[pos]
+embedded = false
+
+[app_preferences]
+url = "https://click-n-collect-flirt-adult-f70cdb5d038f.herokuapp.com"

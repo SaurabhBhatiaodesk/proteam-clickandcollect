@@ -1,0 +1,16 @@
+{% render 'header-widget' %}
+   
+{% schema %}
+{
+  "name": "pickup locations dropdown",
+  "class": "pickup-locations-dropdown-header",
+  "target": "section",
+  "javascript": "header.js",
+  "stylesheet": "header.css",
+
+  "settings": [
+    { "type": "color", "id": "hovercolor", "label": "hover color", "default": "#fff" },
+    { "type": "color", "id": "bgcolor", "label": "background color", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
