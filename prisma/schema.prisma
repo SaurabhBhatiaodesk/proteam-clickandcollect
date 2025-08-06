@@ -10,8 +10,8 @@ generator client {
 // See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:admin1234@localhost:5432/clickncollect"
-  //url      = "postgres://ue405cnr81aefl:pf09d358f494a8aa1f008986654ab640a0b831d5b855741c920856d1888e3e9d7@ccba8a0vn4fb2p.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/debf96etktvp7k"
+  //url      = "postgresql://postgres:admin1234@localhost:5432/clickncollect"
+  url      = "postgres://u7l88t8n827a8n:p3204484de7fb5a8a30608202c1240695ae391f3d06b8324f4a1beed0d2260d78@cee3ebbhveeoab.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d2ba14fcnc25do"
 }
 
 model Session {
